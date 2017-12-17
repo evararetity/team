@@ -109,8 +109,10 @@ h1 span{
 }
 
 .yellow{
-	color:#ff9c00;
+	color:#4D6DE3;
 	font-size:56px;
+	font-family: Courier;
+	/* Comic Sans MS */
 }
 
 p{
