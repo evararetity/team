@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>TeraRave || To-launch</title>
+
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-light.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--/CSS-->
+
+<!--JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script>
+	$(function () {
+		var austDay = new Date();
+		austDay = new Date(austDay.getFullYear() + 1, 5 - 1, 1);
+		$('#defaultCountdown').countdown({until: austDay});
+		$('#year').text(austDay.getFullYear());
+	});
+</script>
+<!--/JS-->
+
+</head>
+
+<body>
+
+<!--DARK OVERLAY-->
+<div class="overlay"></div>
+<!--/DARK OVERLAY-->
+
+<!--WRAP-->
+<div id="wrap">
+	<!--CONTAINER-->
+	<div class="container">
+		<h1>
+			<span class="yellow">TeraRave</span>
+		</h1>
+		<br />
+		<p>We are currently reaching for the <strong>MOON.</strong> You can check back in:</p>
+		<div id="defaultCountdown"></div>
+		<form action="#">
+			<input type="text" name="email" id="email" value="Insert Email to know more">
+			<input type="submit" value="GO!">
+		</form>
+		<p class="copyright">Copyright © 2017 TeraRave LTD</p>
+	</div>
+	<!--/CONTAINER-->
+</div>
+<!--/WRAP-->
+
+</body>
+</html>
